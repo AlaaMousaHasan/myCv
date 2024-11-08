@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #f4f4f4;
+    animation: fadeIn 2s ease-in-out; /* Fades in the header */
+}
+
+.header-content {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    margin-bottom: 20px;
+    animation: scaleUp 1s ease-in-out; /* Scales the profile picture */
+}
+
+.name {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+    animation: slideIn 1.5s ease-in-out; /* Slides in the name */
+}
+
+.title {
+    font-size: 1.2em;
+    color: #777;
+    animation: slideIn 1.8s ease-in-out; /* Slides in the title with a slight delay */
+}
+
+/* CSS Keyframes for Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
