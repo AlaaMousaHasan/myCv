@@ -17,7 +17,7 @@ function Header() {
                 transition={{ duration: 1, delay: 0.5 }}
             >
                 <motion.img
-                    src="/alaa_hasancv.jpg"
+                    src={`${process.env.PUBLIC_URL}/alaa_hasancv.jpg`}
                     alt="Alaa Mousa Hasan"
                     className="profile-pic"
                     initial={{ scale: 0.8 }}
