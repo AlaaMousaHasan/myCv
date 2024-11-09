@@ -32,11 +32,20 @@ function Header() {
                 >
                     Alaa Mousa Hasan
                 </motion.h1>
+                
                 <motion.p
                     className="title"
                     initial={{ x: 200 }}
                     animate={{ x: 0 }}
                     transition={{ duration: 1.2 }}
+                >
+                    M. Computer Engineer
+                </motion.p>
+                <motion.p
+                    className="Job title"
+                    initial={{ x: 200 }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 1.6 }}
                 >
                     Service Engineer
                 </motion.p>
