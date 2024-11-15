@@ -15,18 +15,12 @@
 }
 
 /* Logo styling */
-.navbar-logo a {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
+.navbar-logo .logo {
+    height: 35px; /* Adjust logo size */
+    width: auto;
+    margin-right: 20px;
 }
 
-.navbar-logo a:hover {
-    color: #007bff;
-}
-
-/* Navbar links container */
 .navbar-links {
     display: flex;
     list-style: none;
@@ -47,13 +41,14 @@
 
 /* Get in Touch Button styling */
 .navbar-button .get-in-touch {
-    padding: 8px 16px;
+    padding: 6px 14px;
     border: 2px solid #007bff;
     color: #007bff;
     border-radius: 25px;
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s, color 0.3s;
+    font-size: 0.9em; /* Adjust font size */
 }
 
 .navbar-button .get-in-touch:hover {
@@ -61,67 +56,22 @@
     color: #ffffff;
 }
 
-/* Language Switcher styling */
-.language-switcher {
-    position: relative;
-    margin-left: 20px;
-}
-/*social*/
+/* Social Media Icons */
 .social-icons {
     display: flex;
-    gap: 15px; /* Adjust spacing between icons */
+    gap: 10px;
     align-items: center;
     margin: 0 15px;
 }
 
 .social-icon {
-    color: #0077b5; /* LinkedIn blue, you can customize */
-    font-size: 1.5em;
+    color: #0077b5;
+    font-size: 1.3em; /* Smaller icon size */
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #005083; /* Darker shade on hover */
-}
-
-
-
-/* Language button */
-.lang-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #333;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s;
-}
-
-.lang-button:hover {
-    color: #007bff;
-}
-
-/* Language dropdown styling */
-.lang-dropdown {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 40px;
-    background-color: #ffffff;
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    z-index: 200; /* Increased z-index for better visibility */
-    min-width: 120px;
-}
-
-/* Language Switcher container */
-.language-switcher {
-    margin-left: 20px;
-    margin-right: 20px; /* Adjusts the spacing from the right edge */
+    color: #005083;
 }
 
 /* Language Switcher container */
@@ -156,13 +106,103 @@
 }
 
 .lang-icon {
-    margin-right: 6px; /* Smaller gap between icon and text */
-    font-size: 1em; /* Adjust icon size to match the smaller button */
+    margin-right: 5px;
+    font-size: 1em;
 }
 
-/* Logo styling */
-.navbar-logo .logo {
-    height: 40px; /* Adjust the size of the logo */
-    width: auto;  /* Maintain aspect ratio */
-    margin-right: 20px; /* Add spacing from the rest of the navbar */
+/* Language dropdown styling */
+.lang-dropdown {
+    display: block;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    top: 40px;
+    right: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 10;
+    min-width: 120px;
+}
+
+.lang-dropdown li {
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-dropdown li:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar-links {
+        gap: 15px;
+    }
+
+    .lang-toggle-button {
+        font-size: 0.75em;
+        padding: 4px 8px;
+    }
+
+    .language-switcher {
+        margin-right: 5px;
+    }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-button, .social-icons, .language-switcher {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .get-in-touch {
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+        font-size: 0.85em;
+    }
+
+    .lang-toggle-button {
+        font-size: 0.75em;
+        padding: 4px 8px;
+    }
+
+    .lang-dropdown li {
+        padding: 8px 12px;
+        font-size: 0.85em;
+    }
 }

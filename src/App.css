@@ -14,12 +14,13 @@
     z-index: 100;
 }
 
-/* Add margin to main content to avoid overlap */
+/* Add margin to main content to avoid overlap with the fixed navbar */
 .main-content {
     margin-top: 80px; /* Adjust as needed to place content below navbar */
+    padding: 20px; /* Optional padding for content */
 }
 
-/* Language switcher button styling */
+/* Language Switcher button styling */
 .language-switcher {
     position: relative;
     margin-left: 20px;
@@ -45,7 +46,7 @@
 .lang-dropdown {
     display: block;
     position: absolute;
-    background-color: white;
+    background-color: #ffffff;
     list-style: none;
     padding: 8px 0;
     margin: 0;
@@ -75,4 +76,45 @@
 /* Icon Styling */
 .lang-icon {
     font-size: 1.5em;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .lang-button {
+        font-size: 1em;
+    }
+
+    .main-content {
+        margin-top: 70px;
+    }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-top: 100px;
+        padding: 15px;
+    }
+
+    .lang-button {
+        font-size: 1em;
+    }
+
+    .lang-dropdown li {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
 }

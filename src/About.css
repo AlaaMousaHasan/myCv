@@ -4,26 +4,26 @@
     margin: 0 auto;
     padding: 40px 20px;
     font-family: 'Roboto', sans-serif;
-    color: #333; /* Dark Text */
+    color: #333;
     line-height: 1.8;
-    background-color: #f9f9f9; /* Light Gray Background */
+    background-color: #f9f9f9;
 }
 
 /* Header styling */
 .header-container {
     text-align: center;
     padding: 40px 20px;
-    background: linear-gradient(135deg, #f0f0f0, #f8f8f8); /* Lighter Gray Gradient */
+    background: linear-gradient(135deg, #f0f0f0, #f8f8f8);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    color: #333; /* Dark Text */
+    color: #333;
     position: relative;
 }
 
 .header-divider {
     width: 100px;
     height: 4px;
-    background-color: #2196f3; /* Blue for Divider Line */
+    background-color: #2196f3;
     margin: 15px auto 25px;
     border-radius: 2px;
 }
@@ -31,14 +31,14 @@
 .about-title {
     font-size: 3.5em;
     font-weight: 700;
-    color: #333; /* Dark Gray */
+    color: #333;
 }
 
 .about-subtitle {
     font-size: 1.8em;
     font-weight: 500;
     margin-bottom: 20px;
-    color: #2196f3; /* Blue for Subtitle */
+    color: #2196f3;
 }
 
 /* Card Styling */
@@ -48,7 +48,7 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-top: 20px;
-    border-left: 5px solid #2196f3; /* Blue Accent */
+    border-left: 5px solid #2196f3;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -69,7 +69,7 @@
 .skills-list li {
     font-size: 1em;
     padding: 10px;
-    background-color: #e3f2fd; /* Light Blue Background */
+    background-color: #e3f2fd;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -83,7 +83,7 @@
 
 /* Button Styling */
 .expand-btn {
-    background-color: #2196f3; /* Blue Color */
+    background-color: #2196f3;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -96,15 +96,15 @@
 }
 
 .expand-btn:hover {
-    background-color: #1976d2; /* Darker Blue */
+    background-color: #1976d2;
     transform: scale(1.05);
 }
 
 /* Expanded content */
 .expanded-content {
     margin-top: 10px;
-    background-color: #e3f2fd; /* Light Blue Background */
-    border-left: 4px solid #2196f3; /* Blue Accent */
+    background-color: #e3f2fd;
+    border-left: 4px solid #2196f3;
     padding: 15px;
     border-radius: 8px;
     animation: fadeIn 0.5s ease;
@@ -123,13 +123,87 @@
 
 /* Icons Styling */
 .icon {
-    color: #2196f3; /* Blue Accent for Icons */
+    color: #2196f3;
     margin-right: 10px;
 }
 
-/* Media Query for Mobile Devices */
+/* Media Queries */
+
+/* Tablet View (768px and below) */
 @media (max-width: 768px) {
+    .about-section {
+        padding: 30px 15px;
+    }
+
+    .about-title {
+        font-size: 2.5em;
+    }
+
+    .about-subtitle {
+        font-size: 1.5em;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .experience-card, .education-card, .skills-card {
+        padding: 15px;
+    }
+
+    .expand-btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+    .about-section {
+        padding: 20px 10px;
+    }
+
+    .header-container {
+        padding: 20px;
+    }
+
+    .about-title {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .about-subtitle {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .header-divider {
+        width: 80px;
+        height: 3px;
+        margin: 10px auto 20px;
+    }
+
     .skills-list {
         grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .skills-list li {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .expand-btn {
+        padding: 7px 14px;
+        font-size: 0.85em;
+    }
+
+    .experience-card, .education-card, .skills-card {
+        padding: 12px;
+        margin-top: 15px;
+    }
+
+    .expanded-content {
+        padding: 10px;
     }
 }
