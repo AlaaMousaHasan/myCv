@@ -1,0 +1,112 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "aboutMe": "Über mich",
+    "projects": "Meine Projekte",
+    "contact": "Kontakt",
+    "getInTouch": "Kontakt aufnehmen"
+  },
+  "header": {
+    "name": "Alaa Mousa Hasan",
+    "title": "Servicetechniker | Automatisierungsexperte",
+    "description": "Ich bin ein engagierter Servicetechniker mit einem Hintergrund in Automatisierung und Computertechnik. Leidenschaftlich über das Erstellen von Lösungen zur Optimierung von Arbeitsabläufen und zur Steigerung der Produktivität.",
+    "viewPortfolio": "Portfolio ansehen",
+    "getInTouch": "Kontakt aufnehmen"
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Ich bin ein Servicetechniker mit einem starken Hintergrund in Automatisierung und Computertechnik. Ich entwickle effiziente Lösungen für technische Herausforderungen.",
+    "skills": {
+      "title": "Fähigkeiten",
+      "programming": "Programmierung: C/C++, Python, Java, CAPL",
+      "softwareTools": "Software & Tools: Simulink, CANoe, CAPL, Bamboo, Jenkins",
+      "frameworks": "Frameworks: ROS2, Cypress.io",
+      "projectManagement": "Projektmanagement: Agile, Jira, Confluence",
+      "database": "Datenbanken: SQL",
+      "languages": "Sprachen: Englisch (fließend), Deutsch (fließend)",
+      "details": {
+        "testing": "Erfahren in modellbasiertem Testen und automatisierten Workflows.",
+        "systems": "Erfahren in verteilten Systemen und Client-Server-Architekturen.",
+        "modeling": "Kompetent in fortgeschrittener mathematischer Modellierung (z. B. DFT/FFT, Laplace, Z-Transformation)."
+      },
+      "readMore": "Mehr anzeigen",
+      "readLess": "Weniger anzeigen"
+    },
+    "professionalExperience": {
+      "title": "Berufserfahrung",
+      "otis": {
+        "title": "Otis GmbH, Berlin",
+        "duration": "Testautomatisierung & Wartung (2022 - heute)",
+        "details": {
+          "1": "Entwicklung automatisierter Testframeworks mit Simulink und CANoe.",
+          "2": "Optimierung von Testprozessen und Verbesserung der Systemeffizienz.",
+          "3": "Arbeit an CI/CD-Pipelines, Python-Scripting und Remote-Agents.",
+          "4": "Durchführung fortgeschrittener statischer Code-Analyse mit Coverity."
+        }
+      },
+      "internationalMotivation": {
+        "title": "International Motivation Training",
+        "duration": "IT-Support (2021 - 2022)",
+        "details": {
+          "1": "Bereitstellung von IT-Support und Behebung von Hardware-/Software-Problemen.",
+          "2": "Entwicklung kleiner Automatisierungstools für internes Projektmanagement.",
+          "3": "Konfiguration von Netzwerken, Routern und Laptops für Kunden."
+        }
+      },
+      "4com": {
+        "title": "4Com, Hannover",
+        "duration": "Praktikant & Werkstudent (2019 - 2020)",
+        "details": {
+          "1": "Schwerpunkt auf JavaScript und Frontend-Tests mit Cypress.io.",
+          "2": "Unterstützung der Backend-Verwaltung als Werkstudent.",
+          "3": "Zusammenarbeit mit funktionsübergreifenden Teams zur Optimierung von Tests."
+        }
+      },
+      "readMore": "Mehr anzeigen",
+      "readLess": "Weniger anzeigen"
+    },
+    "education": {
+      "title": "Bildung",
+      "master": {
+        "title": "Master in Computertechnik",
+        "institution": "HTW Berlin (2022 - 2024)",
+        "details": {
+          "1": "Spezialisierung auf eingebettete Systeme, Testautomatisierung und modellbasiertes Testen.",
+          "2": "Wichtige Kurse umfassen Verifikation, Signalverarbeitung, Modellierung und VLSI.",
+          "3": "Große Projekte umfassen die Entwicklung eines Roboters mit ROS2 und die Erstellung von Testmodellen mit Simulink."
+        }
+      },
+      "bachelor": {
+        "title": "Bachelor in Elektro- und Informationstechnik",
+        "institution": "Hochschule Hannover (2017 - 2022)",
+        "details": {
+          "1": "Solide Grundlagen in elektrotechnischen Systemen und Messtechnologien entwickelt.",
+          "2": "Absolvierte Schlüsselkurse in Mathematik, Physik und Digitaltechnik.",
+          "3": "Praktikum und Bachelorarbeit zu fortschrittlichen elektrotechnischen Systemen und Automatisierung abgeschlossen."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie mich",
+    "subtitle": "Ich würde mich freuen, von Ihnen zu hören! Bitte füllen Sie das Formular unten aus oder verwenden Sie die angegebenen Details, um mich zu kontaktieren.",
+    "formTitle": "Nachricht senden",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "Ihre E-Mail-Adresse",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Betreff",
+      "message": "Nachricht",
+      "messagePlaceholder": "Ihre Nachricht",
+      "submit": "Absenden"
+    },
+    "infoTitle": "Kontaktinformationen",
+    "info": {
+      "email": "alaamousahassan@gmail.com",
+      "phone": "+49 15755280469",
+      "address": "Berlin, Deutschland"
+    }
+  }
+}

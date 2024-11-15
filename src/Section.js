@@ -5,7 +5,8 @@ import './Section.css';
 const Section = () => {
     return (
         <div className="sections-container">
-            <Link to="/experience" className="section circle">
+            {/* Comment out or delete the code below to remove the circles */}
+            {/* <Link to="/experience" className="section circle">
                 <h2>Experience</h2>
             </Link>
             <Link to="/skills" className="section circle">
@@ -16,7 +17,7 @@ const Section = () => {
             </Link>
             <Link to="/contact" className="section circle">
                 <h2>Contact</h2>
-            </Link>
+            </Link> */}
         </div>
     );
 };

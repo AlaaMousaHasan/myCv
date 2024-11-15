@@ -1,0 +1,112 @@
+{
+  "navbar": {
+    "home": "Home",
+    "aboutMe": "About Me",
+    "projects": "My Projects",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch"
+  },
+  "header": {
+    "name": "Alaa Mousa Hasan",
+    "title": "Service Engineer | Automation Expert",
+    "description": "I am a dedicated Service Engineer with a background in automation and computer engineering. Passionate about creating solutions to streamline workflows and improve productivity.",
+    "viewPortfolio": "View Portfolio",
+    "getInTouch": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "I am a Service Engineer with a strong background in automation and computer engineering. I create efficient solutions for technical challenges.",
+    "skills": {
+      "title": "Skills",
+      "programming": "Programming: C/C++, Python, Java, CAPL",
+      "softwareTools": "Software & Tools: Simulink, CANoe, CAPL, Bamboo, Jenkins",
+      "frameworks": "Frameworks: ROS2, Cypress.io",
+      "projectManagement": "Project Management: Agile, Jira, Confluence",
+      "database": "Database Development: SQL",
+      "languages": "Languages: English (fluent), German (fluent)",
+      "details": {
+        "testing": "Proficient in model-based testing and automated workflows.",
+        "systems": "Experienced in distributed systems and client-server architecture.",
+        "modeling": "Skilled in advanced mathematical modeling (e.g., DFT/FFT, Laplace, Z-Transform)."
+      },
+      "readMore": "Show More",
+      "readLess": "Show Less"
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "otis": {
+        "title": "Otis GmbH, Berlin",
+        "duration": "Test Automation & Maintenance (2022 - Present)",
+        "details": {
+          "1": "Developed automated testing frameworks using Simulink and CANoe.",
+          "2": "Optimized testing processes and enhanced system efficiency.",
+          "3": "Worked on CI/CD pipelines, Python scripting, and remote agents.",
+          "4": "Conducted advanced static code analysis using Coverity."
+        }
+      },
+      "internationalMotivation": {
+        "title": "International Motivation Training",
+        "duration": "IT Support (2021 - 2022)",
+        "details": {
+          "1": "Provided IT support, troubleshooting hardware/software issues.",
+          "2": "Developed small automation tools for internal project management.",
+          "3": "Configured networks, routers, and laptops for clients."
+        }
+      },
+      "4com": {
+        "title": "4Com, Hannover",
+        "duration": "Intern & Working Student (2019 - 2020)",
+        "details": {
+          "1": "Focused on JavaScript and Frontend Testing using Cypress.io.",
+          "2": "Supported backend management as a working student.",
+          "3": "Collaborated with cross-functional teams to streamline testing."
+        }
+      },
+      "readMore": "Show More",
+      "readLess": "Show Less"
+    },
+    "education": {
+      "title": "Education",
+      "master": {
+        "title": "Master of Computer Engineering",
+        "institution": "HTW Berlin (2022 - 2024)",
+        "details": {
+          "1": "Specialized in embedded systems, test automation, and model-based testing.",
+          "2": "Key courses included Verification, Signal Processing, Modeling, and VLSI.",
+          "3": "Major projects included developing a robot with ROS2 and creating test models with Simulink."
+        }
+      },
+      "bachelor": {
+        "title": "Bachelor of Electrical and Information Engineering",
+        "institution": "Hochschule Hannover (2017 - 2022)",
+        "details": {
+          "1": "Developed a strong foundation in electrotechnical systems and measurement technologies.",
+          "2": "Completed key courses in Mathematics, Physics, and Digital Engineering.",
+          "3": "Completed an internship and Bachelor's thesis on advanced electrotechnical systems and automation."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "I’d love to hear from you! Please fill out the form below or use the provided details to reach out.",
+    "formTitle": "Send a Message",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your Name",
+      "email": "Email",
+      "emailPlaceholder": "Your Email",
+      "subject": "Subject",
+      "subjectPlaceholder": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Your Message",
+      "submit": "Submit"
+    },
+    "infoTitle": "Contact Information",
+    "info": {
+      "email": "alaamousahassan@gmail.com",
+      "phone": "+49 15755280469",
+      "address": "Berlin, Germany"
+    }
+  }
+}

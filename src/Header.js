@@ -1,56 +1,51 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Header.css';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 function Header() {
+    const { t } = useTranslation();
+
     return (
-        <motion.header
-            className="header"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-        >
+        <header className="header">
             <motion.div
                 className="header-content"
-                initial={{ y: -30 }}
-                animate={{ y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
             >
-                <motion.img
-                    src={`${process.env.PUBLIC_URL}/alaa_hasancv.jpg`}
-                    alt="Alaa Mousa Hasan"
-                    className="profile-pic"
-                    initial={{ scale: 0.8 }}
-                    animate={{ scale: 1 }}
+                {/* Information Section on the Left */}
+                <div className="profile-info">
+                    <h1 className="name">{t('header.name')}</h1>
+                    <p className="title">{t('header.title')}</p>
+                    <p className="description">
+                        {t('header.description')}
+                    </p>
+                    
+                    <div className="button-container">
+                        {/* Use Link components for navigation */}
+                        <Link to="/portfolio" className="btn-primary">{t('header.viewPortfolio')}</Link>
+                        <a href="mailto:your.email@example.com?subject=Let's Connect!" className="btn-secondary">{t('header.getInTouch')}
+                        </a>
+                    </div>
+                </div>
+
+                {/* Profile Picture on the Right */}
+                <motion.div
+                    className="profile-pic-container"
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
-                />
-                <motion.h1
-                    className="name"
-                    initial={{ x: -200 }}
-                    animate={{ x: 0 }}
-                    transition={{ duration: 1 }}
                 >
-                    Alaa Mousa Hasan
-                </motion.h1>
-                
-                <motion.p
-                    className="title"
-                    initial={{ x: 200 }}
-                    animate={{ x: 0 }}
-                    transition={{ duration: 1.2 }}
-                >
-                    M. Computer Engineer
-                </motion.p>
-                <motion.p
-                    className="Job title"
-                    initial={{ x: 200 }}
-                    animate={{ x: 0 }}
-                    transition={{ duration: 1.6 }}
-                >
-                    Service Engineer
-                </motion.p>
+                    <img
+                        src={`${process.env.PUBLIC_URL}/alaa_hasancv.jpg`}
+                        alt={t('header.name')}
+                        className="profile-pic"
+                    />
+                </motion.div>
             </motion.div>
-        </motion.header>
+        </header>
     );
 }
 
