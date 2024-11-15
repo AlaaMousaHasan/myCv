@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaGlobe, FaLinkedin, FaXing } from 'react-icons/fa';
-
+import { FaGlobe, FaLinkedin, FaXing, FaBars, FaTimes } from 'react-icons/fa';
 
 function NavBar() {
     const { t, i18n } = useTranslation();
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to toggle mobile menu
 
     const toggleLanguage = () => {
         const newLanguage = i18n.language === 'en' ? 'de' : 'en';
         i18n.changeLanguage(newLanguage);
+    };
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle mobile menu
     };
 
     return (
@@ -20,19 +24,24 @@ function NavBar() {
                 <img src={`${process.env.PUBLIC_URL}/engineering.png`} alt="Logo" className="logo" />
             </div>
 
+            {/* Hamburger Icon for Mobile */}
+            <div className="hamburger" onClick={toggleMobileMenu}>
+                {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+            </div>
+
             {/* Navigation Links */}
-            <ul className="navbar-links">
-                <li><Link to="/">{t('navbar.home')}</Link></li>
-                <li><Link to="/about">{t('navbar.aboutMe')}</Link></li>
-                <li><Link to="/projects">{t('navbar.projects')}</Link></li>
-                <li><Link to="/contact">{t('navbar.contact')}</Link></li>
+            <ul className={`navbar-links ${isMobileMenuOpen ? 'mobile' : ''}`}>
+                <li><Link to="/" onClick={toggleMobileMenu}>{t('navbar.home')}</Link></li>
+                <li><Link to="/about" onClick={toggleMobileMenu}>{t('navbar.aboutMe')}</Link></li>
+                <li><Link to="/projects" onClick={toggleMobileMenu}>{t('navbar.projects')}</Link></li>
+                <li><Link to="/contact" onClick={toggleMobileMenu}>{t('navbar.contact')}</Link></li>
             </ul>
 
             {/* Get in Touch Button */}
             <div className="navbar-button">
-
-                <a href="mailto:your.email@example.com?subject=Let's Connect!" className="get-in-touch">{t('navbar.getInTouch')}</a>
-
+                <a href="mailto:your.email@example.com?subject=Let's Connect!" className="get-in-touch">
+                    {t('navbar.getInTouch')}
+                </a>
             </div>
 
             {/* Social Media Links */}
@@ -44,7 +53,6 @@ function NavBar() {
                     <FaXing className="social-icon" />
                 </a>
             </div>
-
 
             {/* Language Toggle Button */}
             <div className="language-switcher">

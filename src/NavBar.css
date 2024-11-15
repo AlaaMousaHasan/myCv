@@ -16,11 +16,12 @@
 
 /* Logo styling */
 .navbar-logo .logo {
-    height: 35px; /* Adjust logo size */
+    height: 35px;
     width: auto;
     margin-right: 20px;
 }
 
+/* Navbar Links */
 .navbar-links {
     display: flex;
     list-style: none;
@@ -48,7 +49,7 @@
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s, color 0.3s;
-    font-size: 0.9em; /* Adjust font size */
+    font-size: 0.9em;
 }
 
 .navbar-button .get-in-touch:hover {
@@ -66,7 +67,7 @@
 
 .social-icon {
     color: #0077b5;
-    font-size: 1.3em; /* Smaller icon size */
+    font-size: 1.3em;
     transition: color 0.3s ease;
 }
 
@@ -74,27 +75,20 @@
     color: #005083;
 }
 
-/* Language Switcher container */
+/* Language Switcher */
 .language-switcher {
     margin-left: 20px;
-    margin-right: 40px; /* Increase right margin to push it further to the right */
+    margin-right: 40px;
 }
 
-/* Language Switcher container */
-.language-switcher {
-    margin-left: 20px;
-    margin-right: 60px; /* Increase right margin to push it further to the right */
-}
-
-/* Language Toggle Button Styling */
 .lang-toggle-button {
     background: none;
     border: 2px solid #007bff;
-    border-radius: 20px; /* Reduce border radius to make it more compact */
+    border-radius: 20px;
     color: #333;
     cursor: pointer;
-    font-size: 0.5em; /* Smaller font size */
-    padding: 6px 12px; /* Reduced padding to make the button smaller */
+    font-size: 0.5em;
+    padding: 6px 12px;
     display: flex;
     align-items: center;
     transition: background-color 0.3s, color 0.3s;
@@ -110,7 +104,7 @@
     font-size: 1em;
 }
 
-/* Language dropdown styling */
+/* Language Dropdown styling */
 .lang-dropdown {
     display: block;
     position: absolute;
