@@ -1,12 +1,13 @@
 /* General section styling */
 .about-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    max-width: 1200px; /* Match the header-content max-width */
+    margin: 0 auto; /* Center the section */
+    padding: 0 40px; /* Match header-content padding */
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.8;
     background-color: #f9f9f9;
+    box-sizing: border-box; /* Prevent width issues due to padding */
 }
 
 /* Header styling */
@@ -17,7 +18,8 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     color: #333;
-    position: relative;
+    margin-bottom: 15px; /* Move the text down slightly */
+
 }
 
 .header-divider {
@@ -42,19 +44,25 @@
 }
 
 /* Card Styling */
-.experience-card, .education-card, .skills-card {
+.experience-card,
+.education-card,
+.skills-card {
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 20px; /* Add spacing between cards */
+    margin-bottom: 20px; /* Add additional spacing */
     border-left: 5px solid #2196f3;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
-.experience-card:hover, .education-card:hover, .skills-card:hover {
+.experience-card:hover,
+.education-card:hover,
+.skills-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Skills list styling */
@@ -63,7 +71,7 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    gap: 15px; /* Add consistent spacing between skills */
 }
 
 .skills-list li {
@@ -110,6 +118,7 @@
     animation: fadeIn 0.5s ease;
 }
 
+/* Keyframe Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -133,6 +142,7 @@
 @media (max-width: 768px) {
     .about-section {
         padding: 30px 15px;
+        max-width: 100%; /* Full width for smaller screens */
     }
 
     .about-title {
@@ -145,10 +155,15 @@
 
     .skills-list {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px; /* Adjust gap for smaller screens */
     }
 
-    .experience-card, .education-card, .skills-card {
+    .experience-card,
+    .education-card,
+    .skills-card {
         padding: 15px;
+        margin-top: 15px; /* Adjust spacing between cards */
+        margin-bottom: 15px;
     }
 
     .expand-btn {
@@ -161,10 +176,7 @@
 @media (max-width: 480px) {
     .about-section {
         padding: 20px 10px;
-    }
-
-    .header-container {
-        padding: 20px;
+        max-width: 100%; /* Ensure it uses full width on mobile */
     }
 
     .about-title {
@@ -198,9 +210,12 @@
         font-size: 0.85em;
     }
 
-    .experience-card, .education-card, .skills-card {
+    .experience-card,
+    .education-card,
+    .skills-card {
         padding: 12px;
         margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .expanded-content {

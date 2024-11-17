@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Header.css';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom';
 
 function Header() {
     const { t } = useTranslation();
@@ -15,23 +15,18 @@ function Header() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                {/* Information Section on the Left */}
+                {/* Information Section */}
                 <div className="profile-info">
                     <h1 className="name">{t('header.name')}</h1>
                     <p className="title">{t('header.title')}</p>
-                    <p className="description">
-                        {t('header.description')}
-                    </p>
-                    
+                    <p className="description">{t('header.description')}</p>
                     <div className="button-container">
-                        {/* Use Link components for navigation */}
                         <Link to="/portfolio" className="btn-primary">{t('header.viewPortfolio')}</Link>
-                        <a href="mailto:your.email@example.com?subject=Let's Connect!" className="btn-secondary">{t('header.getInTouch')}
-                        </a>
+                        <a href="mailto:your.email@example.com?subject=Let's Connect!" className="btn-secondary">{t('header.getInTouch')}</a>
                     </div>
                 </div>
 
-                {/* Profile Picture on the Right */}
+                {/* Profile Picture Section */}
                 <motion.div
                     className="profile-pic-container"
                     initial={{ opacity: 0, x: 50 }}

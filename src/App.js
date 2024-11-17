@@ -13,7 +13,7 @@ import './App.css';
 function App() {
     return (
         <Router>
-            <Layout> {/* Layout wraps all routes */}
+            <Layout>
                 <div className="main-content">
                     <Routes>
                         <Route
@@ -26,16 +26,7 @@ function App() {
                                 </>
                             }
                         />
-                        {/* About page as a separate route */}
-                        <Route
-                            path="/about"
-                            element={
-                        <Layout>
-                            <About />
-                        </Layout>
-                        }
-                    />
-
+                        <Route path="/about" element={<About />} />
                         <Route path="/experience" element={<Experience />} />
                         <Route path="/skills" element={<Skills />} />
                         <Route path="/portfolio" element={<Portfolio />} />

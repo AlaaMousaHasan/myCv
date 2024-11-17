@@ -1,0 +1,139 @@
+/* Mobile Navbar Container */
+.mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 10px; /* Compact padding inside the navbar */
+    margin: 0; /* Remove any default margin */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed to prevent layout shifts */
+    top: 0; /* Stick to the top */
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Body Reset (to prevent space above/below navbar) */
+body {
+    margin: 0; /* Remove default body margin */
+    padding: 0;
+}
+
+/* Navbar Header */
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 2px; /* Remove unnecessary space below header */
+    margin-bottom: 0; /* Remove unnecessary space below header */
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 2px; /* Remove extra padding */
+    margin: 2px; /* Ensure no extra margin around the icon */
+}
+
+/* Collapsible Menu */
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5px; /* Slightly reduce space between header and menu */
+}
+
+/* Navigation Links */
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Slightly reduced gap between links */
+    width: 100%;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    padding: 8px; /* Compact padding for clickable area */
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+
+/* Footer Section: Get in Touch, Social Icons, and Language Switcher */
+.navbar-footer {
+    margin-top: 10px; /* Adjust spacing above the footer */
+    display: flex; /* Change layout to horizontal */
+    flex-direction: row; /* Horizontal alignment */
+    justify-content: space-between; /* Spread items across the row */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    border-top: 1px solid #eee; /* Subtle separator for hierarchy */
+    padding-top: 10px; /* Space above the footer content */
+}
+
+/* Get in Touch Button */
+.get-in-touch {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 8px 15px; /* Compact padding for the button */
+    border: 2px solid #007bff;
+    border-radius: 25px; /* Rounded button */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex: 0 0 auto; /* Ensure the button doesn't shrink or grow */
+    margin-right: 15px; /* Space between button and icons */
+}
+
+.get-in-touch:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex; /* Horizontal alignment for icons */
+    gap: 10px; /* Space between icons */
+    margin-right: 15px; /* Space between icons and language toggle */
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+}
+
+.social-icon {
+    font-size: 1.5em; /* Icon size */
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+/* Language Toggle Button */
+.lang-toggle-button {
+    padding: 5px 10px; /* Compact padding */
+    font-size: 0.8em;
+    border: 1px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+}
+
+.lang-toggle-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}

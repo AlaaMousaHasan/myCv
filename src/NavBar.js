@@ -1,20 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaGlobe, FaLinkedin, FaXing, FaBars, FaTimes } from 'react-icons/fa';
+import { FaGlobe, FaLinkedin, FaXing } from 'react-icons/fa';
 
 function NavBar() {
     const { t, i18n } = useTranslation();
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to toggle mobile menu
 
     const toggleLanguage = () => {
         const newLanguage = i18n.language === 'en' ? 'de' : 'en';
         i18n.changeLanguage(newLanguage);
-    };
-
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle mobile menu
     };
 
     return (
@@ -24,18 +19,21 @@ function NavBar() {
                 <img src={`${process.env.PUBLIC_URL}/engineering.png`} alt="Logo" className="logo" />
             </div>
 
-            {/* Hamburger Icon for Mobile */}
-            <div className="hamburger" onClick={toggleMobileMenu}>
-                {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+            {/* Links Box */}
+            <div className="navbar-links-box">
+                <ul className="navbar-links">
+                    <li><Link to="/">{t('navbar.home')}</Link></li>
+                </ul>
+                <ul className="navbar-links">
+                    <li><Link to="/about">{t('navbar.aboutMe')}</Link></li>
+                </ul>
+                <ul className="navbar-links">
+                    <li><Link to="/projects">{t('navbar.projects')}</Link></li>
+                </ul>
+                <ul className="navbar-links">
+                    <li><Link to="/contact">{t('navbar.contact')}</Link></li>
+                </ul>
             </div>
-
-            {/* Navigation Links */}
-            <ul className={`navbar-links ${isMobileMenuOpen ? 'mobile' : ''}`}>
-                <li><Link to="/" onClick={toggleMobileMenu}>{t('navbar.home')}</Link></li>
-                <li><Link to="/about" onClick={toggleMobileMenu}>{t('navbar.aboutMe')}</Link></li>
-                <li><Link to="/projects" onClick={toggleMobileMenu}>{t('navbar.projects')}</Link></li>
-                <li><Link to="/contact" onClick={toggleMobileMenu}>{t('navbar.contact')}</Link></li>
-            </ul>
 
             {/* Get in Touch Button */}
             <div className="navbar-button">
@@ -44,20 +42,20 @@ function NavBar() {
                 </a>
             </div>
 
-            {/* Social Media Links */}
+            {/* Social Icons */}
             <div className="social-icons">
-                <a href="https://www.linkedin.com/in/alaa-mousa-hasan-aa3bb7213/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="social-icon" />
                 </a>
-                <a href="https://www.xing.com/profile/yourprofile" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.xing.com/" target="_blank" rel="noopener noreferrer">
                     <FaXing className="social-icon" />
                 </a>
             </div>
 
-            {/* Language Toggle Button */}
+            {/* Language Switcher */}
             <div className="language-switcher">
                 <button className="lang-toggle-button" onClick={toggleLanguage}>
-                    <FaGlobe className="lang-icon" /> 
+                    <FaGlobe className="lang-icon" />
                     {i18n.language === 'en' ? 'Ger' : 'En'}
                 </button>
             </div>
