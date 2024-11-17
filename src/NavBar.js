@@ -44,10 +44,10 @@ function NavBar() {
 
             {/* Social Icons */}
             <div className="social-icons">
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/alaa-mousa-hasan-aa3bb7213" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="social-icon" />
                 </a>
-                <a href="https://www.xing.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.xing.com/profile/Alaa_MousaHasan/web_profiles" target="_blank" rel="noopener noreferrer">
                     <FaXing className="social-icon" />
                 </a>
             </div>
