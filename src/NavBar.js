@@ -2,7 +2,8 @@ import React from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaGlobe, FaLinkedin, FaXing } from 'react-icons/fa';
+import { FaGlobe, FaLinkedin, FaXing,FaGithub } from 'react-icons/fa';
+
 
 function NavBar() {
     const { t, i18n } = useTranslation();
@@ -28,7 +29,7 @@ function NavBar() {
                     <li><Link to="/about">{t('navbar.aboutMe')}</Link></li>
                 </ul>
                 <ul className="navbar-links">
-                    <li><Link to="/projects">{t('navbar.projects')}</Link></li>
+                    <li><Link to="/MyProjects">{t('navbar.projects')}</Link></li>
                 </ul>
                 <ul className="navbar-links">
                     <li><Link to="/contact">{t('navbar.contact')}</Link></li>
@@ -37,7 +38,7 @@ function NavBar() {
 
             {/* Get in Touch Button */}
             <div className="navbar-button">
-                <a href="mailto:your.email@example.com?subject=Let's Connect!" className="get-in-touch">
+                <a href="mailto:alaamousahassan@gmail.com?subject=Let's Connect!" className="get-in-touch">
                     {t('navbar.getInTouch')}
                 </a>
             </div>
@@ -49,6 +50,9 @@ function NavBar() {
                 </a>
                 <a href="https://www.xing.com/profile/Alaa_MousaHasan/web_profiles" target="_blank" rel="noopener noreferrer">
                     <FaXing className="social-icon" />
+                </a>
+                <a href="https://github.com/AlaaMousaHasan" target="_blank" rel="noopener noreferrer">
+                    <FaGithub className="social-icon" /> {/* Added GitHub Icon */}
                 </a>
             </div>
 

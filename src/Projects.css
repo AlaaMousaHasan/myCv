@@ -1,0 +1,81 @@
+/* General Section Styling */
+.projects-section {
+    padding: 60px 20px;
+    background: #f4f8fb; /* Light blue background */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50; /* Dark blue-gray for the title */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #007bff; /* Blue underline */
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0;
+}
+
+/* Card Styling */
+.project-card {
+    background: linear-gradient(145deg, #ffffff, #e6e9ef); /* Subtle gradient */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Item Styling */
+.project-name {
+    font-size: 1.5rem;
+    color: #007bff; /* Professional blue for project names */
+    margin: 20px;
+}
+
+.project-description {
+    margin: 20px;
+    font-size: 1rem;
+    color: #7f8c8d; /* Neutral gray for descriptions */
+    line-height: 1.6;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on mobile */
+    }
+
+    .project-card {
+        margin-bottom: 30px; /* Add spacing between cards */
+    }
+
+    .project-name {
+        font-size: 1.3rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+}

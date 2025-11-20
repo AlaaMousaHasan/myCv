@@ -6,10 +6,64 @@
     "contact": "Contact",
     "getInTouch": "Get in Touch"
   },
+  
+  "portfolio": {
+    "title": "Portfolio",
+    "items": [
+      {
+        "name": "Interactive Online Resume",
+        "description": "A dynamic and responsive web-based CV built with JavaScript.",
+        "link": "https://github.com/AlaaMousaHasan/myCv"
+      },
+      {
+        "name": "Weather Forecast Application",
+        "description": "A Python-based tool to fetch and display real-time weather data.",
+        "link": "https://github.com/AlaaMousaHasan/weatherForcast"
+      },
+      {
+        "name": "Multi-Website Room Availability Tracker",
+        "description": "A Python script to monitor room availability across different platforms.",
+        "link": "https://github.com/AlaaMousaHasan/searchroomIndiffWebsite"
+      },
+      {
+        "name": "Room Alert System",
+        "description": "A Python automation to notify users about room availability via email.",
+        "link": "https://github.com/AlaaMousaHasan/searchroom"
+      }
+    ],
+    "viewOnGithub": "View on GitHub"
+  },
+
+    "projects": {
+        "title": "Projects",
+        "items": [
+          {
+            "name": "Build Test Automation Tool",
+            "description": "A custom tool for automating complex testing processes."
+          },
+          {
+            "name": "Simulink Model Generation and Hardware-in-the-Loop (HIL)",
+            "description": "Built Simulink models from parsed Excel data and connected them to HIL using Vector CAPL, MATLAB/Simulink, and Python."
+          },
+          {
+            "name": "Monitor Emails and Extract Important Data",
+            "description": "A Selenium-based tool to monitor emails and extract critical data automatically."
+          },
+          {
+            "name": "Robot Programming with ROS2",
+            "description": "Programmed a robot to perform specific tasks using the ROS2 framework."
+          },
+          {
+            "name": "Engineering Language Engine",
+            "description": "Developed a domain-specific engineering language using Langium."
+          }
+        ]
+      },
+    
   "header": {
     "name": "Alaa Mousa Hasan",
     "title": "Service Engineer | Automation Expert",
-    "description": "I am a dedicated Service Engineer with a background in automation and computer engineering. Passionate about creating solutions to streamline workflows and improve productivity.",
+    "description": "I am a dedicated Service Engineer with a Master's in Computer Engineering and a Bachelor's in Electrical Engineering. My strong background in automation and computer systems drives my passion for creating innovative solutions that streamline workflows and enhance productivity.",
     "viewPortfolio": "View Portfolio",
     "getInTouch": "Get in Touch"
   },
@@ -19,7 +73,7 @@
     "skills": {
       "title": "Skills",
       "programming": "Programming: C/C++, Python, Java, CAPL",
-      "softwareTools": "Software & Tools: Simulink, CANoe, CAPL, Bamboo, Jenkins",
+      "softwareTools": "Software & Tools: Simulink, CANoe, CAPL, Bamboo, Jenkins,Grafana",
       "frameworks": "Frameworks: ROS2, Cypress.io",
       "projectManagement": "Project Management: Agile, Jira, Confluence",
       "database": "Database Development: SQL",
@@ -34,9 +88,20 @@
     },
     "experience": {
       "title": "Professional Experience",
+      "swarco": {
+          "title": "Swarco GmbH, Berlin",
+          "duration": "Service Engineer (2025 - present)",
+          "details": {
+                "1": "Maintenance and repair of technical systems and equipment.",
+                "2": "Performing inspections and regular service activities.",
+                "3": "Diagnosing and resolving technical issues.",
+                "4": "Installation and commissioning of new systems.",
+                "5": "Development and optimization of automation solutions."
+            }
+        },
       "otis": {
         "title": "Otis GmbH, Berlin",
-        "duration": "Test Automation & Maintenance (2022 - Present)",
+        "duration": "Test Automation & Maintenance (2022 - 2024)",
         "details": {
           "1": "Developed automated testing frameworks using Simulink and CANoe.",
           "2": "Optimized testing processes and enhanced system efficiency.",

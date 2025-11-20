@@ -22,7 +22,7 @@ function Header() {
                     <p className="description">{t('header.description')}</p>
                     <div className="button-container">
                         <Link to="/portfolio" className="btn-primary">{t('header.viewPortfolio')}</Link>
-                        <a href="mailto:your.email@example.com?subject=Let's Connect!" className="btn-secondary">{t('header.getInTouch')}</a>
+                        <a href="mailto:alaamousahassan@gmail.com?subject=Let's Connect!" className="btn-secondary">{t('header.getInTouch')}</a>
                     </div>
                 </div>
 

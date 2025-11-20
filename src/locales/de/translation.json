@@ -6,6 +6,59 @@
     "contact": "Kontakt",
     "getInTouch": "Kontakt aufnehmen"
   },
+  
+  "portfolio": {
+    "title": "Portfolio",
+    "items": [
+      {
+        "name": "Interaktiver Online-Lebenslauf",
+        "description": "Ein dynamischer und responsiver webbasierter Lebenslauf, erstellt mit JavaScript.",
+        "link": "https://github.com/AlaaMousaHasan/myCv"
+      },
+      {
+        "name": "Wettervorhersage-Anwendung",
+        "description": "Ein Python-Tool zur Abrufung und Anzeige von Echtzeit-Wetterdaten.",
+        "link": "https://github.com/AlaaMousaHasan/weatherForcast"
+      },
+      {
+        "name": "Multi-Webseiten-Raumverfügbarkeits-Tracker",
+        "description": "Ein Python-Skript zur Überwachung der Raumverfügbarkeit auf verschiedenen Plattformen.",
+        "link": "https://github.com/AlaaMousaHasan/searchroomIndiffWebsite"
+      },
+      {
+        "name": "Raum-Benachrichtigungssystem",
+        "description": "Eine Python-Automatisierung, die Benutzer über die Verfügbarkeit von Räumen per E-Mail benachrichtigt.",
+        "link": "https://github.com/AlaaMousaHasan/searchroom"
+      }
+    ],
+    "viewOnGithub": "Auf GitHub ansehen"
+  },
+
+  "projects": {
+        "title": "Projekte",
+        "items": [
+          {
+            "name": "Testautomatisierungstool erstellen",
+            "description": "Ein benutzerdefiniertes Tool zur Automatisierung komplexer Testprozesse."
+          },
+          {
+            "name": "Simulink-Modellgenerierung und Hardware-in-the-Loop (HIL)",
+            "description": "Simulink-Modelle aus analysierten Excel-Daten erstellt und mit HIL unter Verwendung von Vector CAPL, MATLAB/Simulink und Python verbunden."
+          },
+          {
+            "name": "E-Mails überwachen und wichtige Daten extrahieren",
+            "description": "Ein Selenium-basiertes Tool zur Überwachung von E-Mails und automatischen Extraktion kritischer Daten."
+          },
+          {
+            "name": "Roboterprogrammierung mit ROS2",
+            "description": "Einen Roboter programmiert, um bestimmte Aufgaben mit dem ROS2-Framework auszuführen."
+          },
+          {
+            "name": "Engineering-Sprache-Engine",
+            "description": "Eine domänenspezifische Ingenieursprache mit Langium entwickelt."
+          }
+        ]
+      },
   "header": {
     "name": "Alaa Mousa Hasan",
     "title": "Servicetechniker | Automatisierungsexperte",
@@ -15,11 +68,11 @@
   },
   "about": {
     "title": "Über mich",
-    "subtitle": "Ich bin ein Servicetechniker mit einem starken Hintergrund in Automatisierung und Computertechnik. Ich entwickle effiziente Lösungen für technische Herausforderungen.",
+    "subtitle": "Ich bin ein engagierter Servicetechniker mit einem Masterabschluss im Bereich Computeringenieurwesen und einem Bachelorabschluss in Elektrotechnik. Mein starker Hintergrund in Automatisierung und Computersystemen treibt meine Leidenschaft an, innovative Lösungen zu entwickeln, die Arbeitsabläufe optimieren und die Produktivität steigern.",
     "skills": {
       "title": "Fähigkeiten",
       "programming": "Programmierung: C/C++, Python, Java, CAPL",
-      "softwareTools": "Software & Tools: Simulink, CANoe, CAPL, Bamboo, Jenkins",
+      "softwareTools": "Software & Tools: Simulink, CANoe, CAPL, Bamboo, Jenkins, Grafana",
       "frameworks": "Frameworks: ROS2, Cypress.io",
       "projectManagement": "Projektmanagement: Agile, Jira, Confluence",
       "database": "Datenbanken: SQL",
@@ -34,9 +87,20 @@
     },
     "professionalExperience": {
       "title": "Berufserfahrung",
+      "swarco": {
+        "title": "Swarco GmbH, Berlin",
+        "duration": "Service Engineer (2025 - heute)",
+        "details": {
+            "1": "Wartung und Reparatur von technischen Anlagen und Geräten.",
+            "2": "Durchführung von Inspektionen und regelmäßigen Servicetätigkeiten.",
+            "3": "Fehlerdiagnose und Behebung von technischen Problemen.",
+            "4": "Installation und Inbetriebnahme neuer Systeme.",
+            "5": "Entwicklung und Optimierung von Automatisierungslösungen."
+        }
+      },
       "otis": {
         "title": "Otis GmbH, Berlin",
-        "duration": "Testautomatisierung & Wartung (2022 - heute)",
+        "duration": "Testautomatisierung & Wartung (2022 - 2024)",
         "details": {
           "1": "Entwicklung automatisierter Testframeworks mit Simulink und CANoe.",
           "2": "Optimierung von Testprozessen und Verbesserung der Systemeffizienz.",

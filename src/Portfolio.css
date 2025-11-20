@@ -1,0 +1,123 @@
+/* General Section Styling */
+.portfolio-section {
+    padding: 60px 20px;
+    background: #f4f8fb;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #007bff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Grid Layout */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0;
+}
+
+/* Card Styling */
+.portfolio-card {
+    background: linear-gradient(145deg, #ffffff, #e6e9ef);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Image Placeholder for the Card */
+.portfolio-card::before {
+    content: "";
+    display: block;
+    height: 150px;
+    background: #007bff;
+    border-bottom: 5px solid #0056b3;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Card Content */
+.portfolio-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 20px 20px 10px;
+    font-weight: bold;
+}
+
+.portfolio-name a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.portfolio-name a:hover {
+    color: #0056b3;
+}
+
+.portfolio-description {
+    margin: 0 20px 20px;
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* View on GitHub Button */
+.portfolio-link-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 0 20px 20px;
+    background: #007bff;
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-link-button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-card::before {
+        height: 120px;
+    }
+
+    .portfolio-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .portfolio-description {
+        font-size: 0.9rem;
+    }
+
+    .portfolio-link-button {
+        font-size: 0.9rem;
+    }
+}

@@ -8,6 +8,7 @@ import Experience from './Experience';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import MyProjects from "./MyProjects"
 import './App.css';
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
                                     <Header />
                                     <About />
                                     <Section />
+                                    <Portfolio/>
+                                    
                                 </>
                             }
                         />
@@ -31,6 +34,8 @@ function App() {
                         <Route path="/skills" element={<Skills />} />
                         <Route path="/portfolio" element={<Portfolio />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/MyProjects" element={<MyProjects />} />
+
                     </Routes>
                 </div>
             </Layout>

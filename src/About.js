@@ -105,6 +105,7 @@ function About() {
                     <FaBriefcase className="icon" /> {t('about.experience.title')}
                 </h3>
                 <div className="experience-card">
+                    <p><strong>{t('about.experience.swarco.title')}</strong> – {t('about.experience.swarco.duration')}</p>
                     <p><strong>{t('about.experience.otis.title')}</strong> – {t('about.experience.otis.duration')}</p>
                     <p><strong>{t('about.experience.internationalMotivation.title')}</strong> – {t('about.experience.internationalMotivation.duration')}</p>
                     <p><strong>{t('about.experience.4com.title')}</strong> – {t('about.experience.4com.duration')}</p>
@@ -121,6 +122,17 @@ function About() {
                             animate={{ opacity: 1, height: 'auto' }}
                             transition={{ duration: 0.4 }}
                         >
+                            <div className="timeline-item">
+                                <h4>{t('about.experience.swarco.title')}</h4>
+                                <ul>
+                                    <li>{t('about.experience.swarco.details.1')}</li>
+                                    <li>{t('about.experience.swarco.details.2')}</li>
+                                    <li>{t('about.experience.swarco.details.3')}</li>
+                                    <li>{t('about.experience.swarco.details.4')}</li>
+                                    <li>{t('about.experience.swarco.details.5')}</li>
+
+                                </ul>
+                            </div>
                             <div className="timeline-item">
                                 <h4>{t('about.experience.otis.title')}</h4>
                                 <ul>
