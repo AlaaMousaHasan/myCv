@@ -103,6 +103,27 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+
+.portfolio-hint-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-hint-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-hint-button:hover {
+  background-color: #0056b3;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .portfolio-card::before {

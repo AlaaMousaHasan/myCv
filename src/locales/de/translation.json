@@ -6,165 +6,213 @@
     "contact": "Kontakt",
     "getInTouch": "Kontakt aufnehmen"
   },
-  
-  "portfolio": {
-    "title": "Portfolio",
-    "items": [
-      {
-        "name": "Interaktiver Online-Lebenslauf",
-        "description": "Ein dynamischer und responsiver webbasierter Lebenslauf, erstellt mit JavaScript.",
-        "link": "https://github.com/AlaaMousaHasan/myCv"
-      },
-      {
-        "name": "Wettervorhersage-Anwendung",
-        "description": "Ein Python-Tool zur Abrufung und Anzeige von Echtzeit-Wetterdaten.",
-        "link": "https://github.com/AlaaMousaHasan/weatherForcast"
-      },
-      {
-        "name": "Multi-Webseiten-Raumverfügbarkeits-Tracker",
-        "description": "Ein Python-Skript zur Überwachung der Raumverfügbarkeit auf verschiedenen Plattformen.",
-        "link": "https://github.com/AlaaMousaHasan/searchroomIndiffWebsite"
-      },
-      {
-        "name": "Raum-Benachrichtigungssystem",
-        "description": "Eine Python-Automatisierung, die Benutzer über die Verfügbarkeit von Räumen per E-Mail benachrichtigt.",
-        "link": "https://github.com/AlaaMousaHasan/searchroom"
-      }
-    ],
-    "viewOnGithub": "Auf GitHub ansehen"
-  },
-
-  "projects": {
-        "title": "Projekte",
-        "items": [
-          {
-            "name": "Testautomatisierungstool erstellen",
-            "description": "Ein benutzerdefiniertes Tool zur Automatisierung komplexer Testprozesse."
-          },
-          {
-            "name": "Simulink-Modellgenerierung und Hardware-in-the-Loop (HIL)",
-            "description": "Simulink-Modelle aus analysierten Excel-Daten erstellt und mit HIL unter Verwendung von Vector CAPL, MATLAB/Simulink und Python verbunden."
-          },
-          {
-            "name": "E-Mails überwachen und wichtige Daten extrahieren",
-            "description": "Ein Selenium-basiertes Tool zur Überwachung von E-Mails und automatischen Extraktion kritischer Daten."
-          },
-          {
-            "name": "Roboterprogrammierung mit ROS2",
-            "description": "Einen Roboter programmiert, um bestimmte Aufgaben mit dem ROS2-Framework auszuführen."
-          },
-          {
-            "name": "Engineering-Sprache-Engine",
-            "description": "Eine domänenspezifische Ingenieursprache mit Langium entwickelt."
-          }
-        ]
-      },
   "header": {
     "name": "Alaa Mousa Hasan",
-    "title": "Servicetechniker | Automatisierungsexperte",
-    "description": "Ich bin ein engagierter Servicetechniker mit einem Hintergrund in Automatisierung und Computertechnik. Leidenschaftlich über das Erstellen von Lösungen zur Optimierung von Arbeitsabläufen und zur Steigerung der Produktivität.",
+    "title": "DevOps- & Monitoring Engineer",
+    "description": "DevOps Engineer mit fundierter Praxiserfahrung in Automatisierung, Monitoring, verteilten Systemen und Cloud-Native-Technologien. Erfahren in Prometheus/Grafana, Docker, CI/CD-Pipelines sowie Infrastruktur-Automatisierung unter Windows und Linux. Begeistert von stabilen Systemarchitekturen und End-to-End-Automatisierung.",
     "viewPortfolio": "Portfolio ansehen",
     "getInTouch": "Kontakt aufnehmen"
   },
   "about": {
     "title": "Über mich",
-    "subtitle": "Ich bin ein engagierter Servicetechniker mit einem Masterabschluss im Bereich Computeringenieurwesen und einem Bachelorabschluss in Elektrotechnik. Mein starker Hintergrund in Automatisierung und Computersystemen treibt meine Leidenschaft an, innovative Lösungen zu entwickeln, die Arbeitsabläufe optimieren und die Produktivität steigern.",
+    "subtitle": "DevOps- & Service Engineer mit Fokus auf Automatisierung, Monitoring und verteilten Systemen.",
     "skills": {
       "title": "Fähigkeiten",
-      "programming": "Programmierung: C/C++, Python, Java, CAPL",
-      "softwareTools": "Software & Tools: Simulink, CANoe, CAPL, Bamboo, Jenkins, Grafana",
-      "frameworks": "Frameworks: ROS2, Cypress.io",
+      "programming": "Programmierung: Python, Bash, PowerShell, C#, JavaScript",
+      "softwareTools": "Tools: Prometheus, Grafana, Alertmanager, Docker, Kubernetes, Terraform, Ansible, GitHub Actions, Proxmox",
+      "frameworks": "Frameworks: ASP.NET Core, React, Node.js",
       "projectManagement": "Projektmanagement: Agile, Jira, Confluence",
-      "database": "Datenbanken: SQL",
+      "database": "Datenbanken: PostgreSQL, SQLite, SQL",
       "languages": "Sprachen: Englisch (fließend), Deutsch (fließend)",
       "details": {
-        "testing": "Erfahren in modellbasiertem Testen und automatisierten Workflows.",
-        "systems": "Erfahren in verteilten Systemen und Client-Server-Architekturen.",
-        "modeling": "Kompetent in fortgeschrittener mathematischer Modellierung (z. B. DFT/FFT, Laplace, Z-Transformation)."
+        "testing": "Erfahrung in Testautomatisierung und modellbasierten Workflows (Simulink, CANoe, CAPL).",
+        "systems": "Erfahren im Betrieb verteilter Infrastrukturen und Client-Server-Architekturen.",
+        "modeling": "Akademischer Hintergrund in Signalverarbeitung und mathematischer Modellierung (FFT/DFT, Laplace, Z-Transformation)."
       },
       "readMore": "Mehr anzeigen",
       "readLess": "Weniger anzeigen"
     },
-    "professionalExperience": {
+    "experience": {
       "title": "Berufserfahrung",
       "swarco": {
         "title": "Swarco GmbH, Berlin",
-        "duration": "Service Engineer (2025 - heute)",
+        "duration": "DevOps & Monitoring Engineer (2024 – Heute)",
         "details": {
-            "1": "Wartung und Reparatur von technischen Anlagen und Geräten.",
-            "2": "Durchführung von Inspektionen und regelmäßigen Servicetätigkeiten.",
-            "3": "Fehlerdiagnose und Behebung von technischen Problemen.",
-            "4": "Installation und Inbetriebnahme neuer Systeme.",
-            "5": "Entwicklung und Optimierung von Automatisierungslösungen."
+          "1": "Entwurf, Deployment und Betrieb großskaliger Monitoring-Stacks (Prometheus, Grafana, Alertmanager) für 40+ Verkehrs­steuerungsanlagen.",
+          "2": "Automatisierte Systembereitstellung mit Terraform, Ansible sowie Bash-/Python-Skripten.",
+          "3": "Erstellung von Dashboards, Alarmregeln, Exportern und Scraping-Architekturen für verteilte Windows-/Linux-Systeme.",
+          "4": "Analyse und Behebung von Infrastruktur-, Netzwerk- und Service-Störungen in Produktivumgebungen.",
+          "5": "Enge Zusammenarbeit mit internen Teams, Kundenstandorten und Herstellern zur Sicherstellung von Systemstabilität und Verfügbarkeit."
         }
       },
       "otis": {
         "title": "Otis GmbH, Berlin",
-        "duration": "Testautomatisierung & Wartung (2022 - 2024)",
+        "duration": "Automatisierung & Systemtest (2022 – 2024)",
         "details": {
-          "1": "Entwicklung automatisierter Testframeworks mit Simulink und CANoe.",
-          "2": "Optimierung von Testprozessen und Verbesserung der Systemeffizienz.",
-          "3": "Arbeit an CI/CD-Pipelines, Python-Scripting und Remote-Agents.",
-          "4": "Durchführung fortgeschrittener statischer Code-Analyse mit Coverity."
+          "1": "Entwicklung automatisierter Testabläufe mit Simulink, CANoe und Python.",
+          "2": "Optimierung von CI/CD-Prozessen und Build-Automatisierung für Testsysteme.",
+          "3": "Arbeit mit verteilten Testumgebungen, Remote-Agenten und statischer Codeanalyse.",
+          "4": "Mitwirkung an skalierbaren Automatisierungsframeworks für Systemvalidierung."
         }
       },
       "internationalMotivation": {
         "title": "International Motivation Training",
-        "duration": "IT-Support (2021 - 2022)",
+        "duration": "IT Support & Automatisierung (2021 – 2022)",
         "details": {
-          "1": "Bereitstellung von IT-Support und Behebung von Hardware-/Software-Problemen.",
-          "2": "Entwicklung kleiner Automatisierungstools für internes Projektmanagement.",
-          "3": "Konfiguration von Netzwerken, Routern und Laptops für Kunden."
+          "1": "IT-Support, Fehleranalyse und Systemkonfiguration.",
+          "2": "Entwicklung kleiner Automatisierungstools zur Optimierung interner Abläufe.",
+          "3": "Netzwerk-Setup, Laptop-Konfiguration und Systemwartung."
         }
       },
       "4com": {
-        "title": "4Com, Hannover",
-        "duration": "Praktikant & Werkstudent (2019 - 2020)",
+        "title": "4Com GmbH, Hannover",
+        "duration": "Praktikant & Werkstudent (2019 – 2020)",
         "details": {
-          "1": "Schwerpunkt auf JavaScript und Frontend-Tests mit Cypress.io.",
-          "2": "Unterstützung der Backend-Verwaltung als Werkstudent.",
-          "3": "Zusammenarbeit mit funktionsübergreifenden Teams zur Optimierung von Tests."
+          "1": "Arbeit mit JavaScript-basierten Testtools und Cypress.io.",
+          "2": "Unterstützung interner Backend- und Tooling-Entwicklung.",
+          "3": "Zusammenarbeit mit Engineering-Teams zur Verbesserung der Teststabilität."
         }
       },
       "readMore": "Mehr anzeigen",
       "readLess": "Weniger anzeigen"
     },
     "education": {
-      "title": "Bildung",
+      "title": "Ausbildung",
       "master": {
-        "title": "Master in Computertechnik",
-        "institution": "HTW Berlin (2022 - 2024)",
+        "title": "Master in Computer Engineering",
+        "institution": "HTW Berlin (2022 – 2024)",
         "details": {
-          "1": "Spezialisierung auf eingebettete Systeme, Testautomatisierung und modellbasiertes Testen.",
-          "2": "Wichtige Kurse umfassen Verifikation, Signalverarbeitung, Modellierung und VLSI.",
-          "3": "Große Projekte umfassen die Entwicklung eines Roboters mit ROS2 und die Erstellung von Testmodellen mit Simulink."
+          "1": "Schwerpunkte: Embedded Systems, Automatisierung, verteilte Systeme.",
+          "2": "Fortgeschrittene Module in Signalverarbeitung, Modellierung und Verifikation.",
+          "3": "Projekte in Robotik und Automatisierung mit ROS2 und Simulink."
         }
       },
       "bachelor": {
         "title": "Bachelor in Elektro- und Informationstechnik",
-        "institution": "Hochschule Hannover (2017 - 2022)",
+        "institution": "Hochschule Hannover (2017 – 2022)",
         "details": {
-          "1": "Solide Grundlagen in elektrotechnischen Systemen und Messtechnologien entwickelt.",
-          "2": "Absolvierte Schlüsselkurse in Mathematik, Physik und Digitaltechnik.",
-          "3": "Praktikum und Bachelorarbeit zu fortschrittlichen elektrotechnischen Systemen und Automatisierung abgeschlossen."
+          "1": "Grundlagen in elektrotechnischen Systemen und Informationsverarbeitung.",
+          "2": "Projekte in Automatisierung, Digitaltechnik und Messtechnik.",
+          "3": "Bachelorarbeit & Praktikum im Bereich Automatisierung und Messsysteme."
         }
       }
     }
   },
+  "projects": {
+    "title": "Projekte",
+    "items": [
+      {
+        "name": "Prometheus & Grafana Monitoring Setup",
+        "description": "Einrichtung und Betrieb eines Monitorings für 40+ verteilte Windows-/Linux-Systeme. Verwaltung von VMs, Deployment von Docker-Services über Portainer und Integration von Prometheus, Grafana und Exportern."
+      },
+      {
+        "name": "B2B Supplier–Restaurant Plattform",
+        "description": "Konzeption und Entwicklung einer Full-Stack-Plattform (ASP.NET 8 + React). Definition von Anforderungen, Architekturplanung, Task-Design, Authentifizierung, Rollenverwaltung und Datenbankmodellierung."
+      },
+      {
+        "name": "Grafana Dashboards & Alarmregeln",
+        "description": "Entwicklung komplexer Dashboards, Variablen, Templates und Alarmregeln für produktives Monitoring."
+      },
+      {
+        "name": "Investify – Micro-Investment Plattform (Konzept)",
+        "description": "Konzeption einer Plattform für Mikro-Investitionen. Definition der Anforderungen, Nutzerflüsse, Subscription-Modell und MVP-Roadmap."
+      },
+      {
+        "name": "Simulink Model Generator",
+        "description": "Parser-Tool zur automatischen Erzeugung von Simulink-Modellen aus strukturierten Excel-Daten."
+      },
+      {
+        "name": "HIL Testautomatisierung",
+        "description": "Automatisierte Systemtests mit CANoe, CAPL, Python und Simulink."
+      },
+      {
+        "name": "Bamboo CI/CD Agent Setup",
+        "description": "Einrichtung und Betrieb von Bamboo-Build-Agenten für automatisierte CI/CD-Pipelines."
+      },
+      {
+        "name": "Netzwerk-Debugging & Konnektivitätsanalyse",
+        "description": "Analyse und Behebung von Netzwerkproblemen in verteilten Windows-/Linux-Systemen: Exporter-Probleme, Firewall-Regeln, Routing, Ports, VM-Erreichbarkeit, Jump-Host-Debugging."
+      },
+      {
+        "name": "Computer-Vision Experimente",
+        "description": "Erste Bildverarbeitungs-Prototypen mit Python und OpenCV (Kantenerkennung, Thresholding, Features)."
+      },
+      {
+        "name": "Python Automatisierungsskripte",
+        "description": "Tools für Raumsuche, E-Mail-Benachrichtigungen und Wetter-APIs."
+      },
+      {
+        "name": "Wettervorhersage-Applikation",
+        "description": "Python-Programm zur Echtzeit-Wetterabfrage über API-Requests."
+      },
+      {
+        "name": "Interaktiver Online-Lebenslauf",
+        "description": "Mehrsprachige, responsive Online-CV-Website basierend auf React."
+      },
+      {
+        "name": "Multi-Device Kommunikationssystem (Bachelorarbeit)",
+        "description": "Kommunikationssystem zwischen Android-Geräten und Mikrocontrollern via SPI und seriellen Protokollen."
+      },
+      {
+        "name": "Docker Compose Umgebung",
+        "description": "Aufbau mehrerer Docker-Compose-Umgebungen für Backend, Frontend, Datenbanken und Monitoring."
+      },
+      {
+        "name": "Portainer Stack Deployment",
+        "description": "Deployment und Verwaltung von Docker-Stacks über Portainer."
+      },
+      {
+        "name": "Kubernetes Deployment Demo",
+        "description": "Deployment eines Frontends und Backends auf K3s mit Deployments, Services und Namespaces."
+      },
+      {
+        "name": "Terraform & Ansible Automation Lab",
+        "description": "Experimentelle Infrastruktur-Automatisierung mit Terraform und Ansible für Windows/Linux."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "hintText": "Zur vollständigen Projektliste",
+    "hintLink": "/myprojects",
+    "items": [
+      {
+        "name": "Interaktiver Online-Lebenslauf",
+        "description": "Responsiver, modularer Online-CV mit React.",
+        "link": "https://github.com/AlaaMousaHasan/myCv"
+      },
+      {
+        "name": "Monitoring Automatisierungsskripte",
+        "description": "Skripte zur Automatisierung von Exportern und Systemchecks.",
+        "link": "https://github.com/AlaaMousaHasan"
+      },
+      {
+        "name": "Infrastructure-as-Code Lab",
+        "description": "Terraform- und Ansible-Automatisierung für Lern- und Prod-Umgebungen.",
+        "link": "https://github.com/AlaaMousaHasan"
+      },
+      {
+        "name": "Legacy Python Projekte",
+        "description": "Frühe Automatisierungsprojekte: Wetter, Scraping, Benachrichtigungen.",
+        "link": "https://github.com/AlaaMousaHasan"
+      }
+    ],
+    "viewOnGithub": "Auf GitHub ansehen"
+  },
   "contact": {
-    "title": "Kontaktieren Sie mich",
-    "subtitle": "Ich würde mich freuen, von Ihnen zu hören! Bitte füllen Sie das Formular unten aus oder verwenden Sie die angegebenen Details, um mich zu kontaktieren.",
+    "title": "Kontakt",
+    "subtitle": "Für Anfragen, Zusammenarbeit oder technische Themen – gerne melden.",
     "formTitle": "Nachricht senden",
     "form": {
       "name": "Name",
       "namePlaceholder": "Ihr Name",
       "email": "E-Mail",
-      "emailPlaceholder": "Ihre E-Mail-Adresse",
+      "emailPlaceholder": "Ihre E-Mail",
       "subject": "Betreff",
       "subjectPlaceholder": "Betreff",
       "message": "Nachricht",
       "messagePlaceholder": "Ihre Nachricht",
-      "submit": "Absenden"
+      "submit": "Senden"
     },
     "infoTitle": "Kontaktinformationen",
     "info": {
